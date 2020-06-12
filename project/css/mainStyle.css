@@ -1,0 +1,631 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contentWrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #dcdcdc;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  width: 273px;
+  height: 100px;
+}
+
+ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:first-child {
+  position: absolute;
+  left: 0;
+}
+
+li:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.telephone {
+  display: block;
+  font-family: 'Myriad Pro';
+  font-size: 40px;
+  color: #767676;
+  font-size: 40px;
+}
+
+.sectionAction {
+  height: 510px;
+  background-position: -25px;
+  background-image: url(/img/action_background.png);
+}
+
+.sectionActionWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  font-family: "Myriad Pro - Semibold";
+  text-align: center;
+  font-size: 24px;
+  color: #9da3d7;
+  margin-bottom: 25px;
+}
+
+.containerForm-form {
+  width: 360px;
+  padding: 30px 20px;
+  background-color: #9da3d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formText {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Myriad Pro";
+}
+
+.formInputAndButton {
+  width: 290px;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+}
+
+.formInput {
+  color: #767676;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+}
+
+.formButton {
+  background-color: #ffc087;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sliderImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.sectionSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sliderDots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 50px;
+}
+
+.dotAcitve::after {
+  position: absolute;
+  content: "";
+  left: auto;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #9da3d7;
+}
+
+.dot {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.sliderImage-unactive {
+  display: none;
+}
+
+.sectionText {
+  margin-bottom: 60px;
+}
+
+.sectionText-title {
+  color: #000000;
+}
+
+.sectionText-text {
+  text-align: justify;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 14px;
+}
+
+.windows {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.windowItem {
+  height: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.windowItem-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.windowItem-text {
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+}
+
+.windowItem-text_active {
+  color: #0099de;
+  text-decoration: underline;
+}
+
+.calculator {
+  padding: 25px;
+  -webkit-box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.23), inset 1px 2px 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.23), inset 1px 2px 6px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.calculatorValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 330px;
+}
+
+.calculatorContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculatorWidth {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculatorHeight {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: -35px;
+}
+
+.calculatorValues-window {
+  margin-bottom: 40px;
+}
+
+.calculatorHeight-window {
+  height: 170px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculatorWidth,
+.calculatorHeight {
+  color: #636363;
+  font-family: "Myriad Pro - Semibold It";
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.values {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.itemValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.itemValue label {
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.itemValue input {
+  border-radius: 5px;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #a2a2a2;
+  color: #5d5d5d;
+  font-family: "Myriad Pro";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.sectionCalculator {
+  margin-bottom: 100px;
+}
+
+.factor {
+  color: #0099de;
+  font-family: "Myriad Pro";
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.windowTypes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.windowTypes-title {
+  color: #0099de;
+  font-family: "Myriad Pro";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.windowType-title {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.windowType-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.windowType-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.windowType-radio input {
+  border: 2px solid #979797;
+  cursor: pointer;
+}
+
+.windowType-radio label {
+  margin: 0 15px 0 5px;
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.windowLeaflet {
+  margin-top: 20px;
+}
+
+.windowLeaflet-select {
+  width: 360px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  padding: 0 20px 0 30px;
+  border-radius: 5px;
+  border: 2px solid #aeaeae;
+  cursor: pointer;
+}
+
+.windowLeaflet-select p {
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40.92px;
+}
+
+.calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.calculatePhone,
+.calculateButton {
+  width: 280px;
+  height: 50px;
+}
+
+.calculateButton {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  background-color: #9da3d7;
+  margin-left: 10px;
+}
+
+.calculatePhone {
+  border-radius: 10px;
+  background-color: #c6c6c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #c6c6c6;
+  margin-right: 10px;
+}
+
+.calculatePhone-image {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.calculatePhone input {
+  margin-left: 15px;
+  color: #424242;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+  border-radius: 10px;
+  background-color: #c6c6c6;
+  border: 1px solid #c6c6c6;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  height: 148px;
+  background: #767676;
+}
+
+.footer-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerText {
+  color: #fffefe;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=mainStyle.css.map */

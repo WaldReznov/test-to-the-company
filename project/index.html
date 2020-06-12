@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <header class="header">
+      <nav class="contentWrap">
+        <ul>
+          <li>
+            <img src="img/logo.png" class="logo" alt="logo">
+          </li>
+          <li>
+            <a href="tel:+74997777777" class="telephone">+7(499) 777-77-77</a>
+            <a href="tel:+74997777777" class="telephone">+7(499) 777-77-77</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="sectionAction">
+        <div class="contentWrap sectionActionWrap">
+          <div class="containerForm">
+            <p class="sectionTitle">Форма с кнопкой</p>
+            <form action="" class="containerForm-form" 
+            onsubmit="return false;">
+              <p class="formText">оставь телефон и получи что-то офигенное</p>
+              <input type="number" placeholder="Введите номер" class="formInputAndButton formInput">
+              <button class="formInputAndButton formButton" onclick="showGift()">получить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectionSlider">
+        <h2 class="sectionTitle">Тут у нас слайдер</h2>
+        <div class="slider">
+          <div class="wrapSlides">
+            <div class="sliderImages">
+              <img src="img/slider_1.png" class="sliderImage" alt="">
+              <img src="img/slider_2.png" class="sliderImage sliderImage-unactive" alt="">
+              <img src="img/slider_3.png" class="sliderImage sliderImage-unactive" alt="">
+              <img src="img/img2 (1).jpg" class="sliderImage sliderImage-unactive" alt="">
+              <img src="img/img2 (2).jpg" class="sliderImage sliderImage-unactive" alt="">
+            </div>
+          </div>
+          <div class="sliderDots">
+            <div class="dot dotAcitve" onclick="checkCurrentSlide(1)">
+            </div>
+            <div class="dot" onclick="checkCurrentSlide(2)">
+            </div>
+            <div class="dot" onclick="checkCurrentSlide(3)">
+            </div>
+            <div class="dot" onclick="checkCurrentSlide(4)">
+            </div>
+            <div class="dot" onclick="checkCurrentSlide(5)">
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+      <section class="sectionText">
+        <div class="contentWrap">
+          <h2 class="sectionTitle sectionText-title">Просто текстовый блок</h2>
+          <p class="sectionText-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac dui lacus. Nulla dapibus interdum interdum. Curabitur ut diam nisl. Vivamus libero lacus, viverra at dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna ut, placerat nulla. Duis nunc urna, semper non arcu ut, sagittis dapibus lorem. Nunc nec urna id velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in risus ante.</p>
+        </div>
+      </section>
+
+      <section class="sectionCalculator">
+        <div class="contentWrap">
+          <h2 class="sectionTitle">Калькулятор<br/>(стоимость пользователь узнает по телефону)</h2>
+          <div class="windows">
+            <figure class="windowItem" onclick="changeWindow(1)">
+              <img src="img/window_1.png" class="windowItem-img" alt="">
+              <figcaption class="windowItem-text windowItem-text_active">Одностворчатое</figcaption>
+            </figure>
+            
+            <figure class="windowItem" onclick="changeWindow(2)">
+              <img src="img/window_2.png" class="windowItem-img" alt="">
+              <figcaption class="windowItem-text">Двухстворчатое</figcaption>
+            </figure>
+
+            <figure class="windowItem" onclick="changeWindow(3)">
+              <img src="img/window_3.png" class="windowItem-img" alt="">
+              <figcaption class="windowItem-text">Трехстворчатое</figcaption>
+            </figure>
+
+            <figure class="windowItem" onclick="changeWindow(4)">
+              <img src="img/window_3_large.png" class="windowItem-img" alt="">
+              <figcaption class="windowItem-text">Балконный блок</figcaption>
+            </figure>
+
+            <figure class="windowItem" onclick="changeWindow(5)">
+              <img src="img/window_4.png" class="windowItem-img" alt="">
+              <figcaption class="windowItem-text">Остекление балкона</figcaption>
+            </figure>
+          </div>
+
+          <div class="calculator">
+            <div class="calculatorContent">
+              <div class="calculatorValues">
+                <div class="calculatorValues-window">
+                  <p class="calculatorWidth">ширина</p>
+                  <div class="calculatorHeight-window">
+                    <p class="calculatorHeight">высота</p>
+                    <img class="calculatorWindow" src="img/calculator_window_1.png" alt="window">
+                    <img class="calculatorWindow hide" src="img/calculator_window_2.png" alt="window">
+                    <img class="calculatorWindow hide" src="img/calculator_window_3.png" alt="window">
+                    <img class="calculatorWindow hide" src="img/calculator_window_3_large.png" alt="window">
+                    <img class="calculatorWindow hide" src="img/calculator_window_4.png" alt="window">
+                  </div>
+                </div>
+                <div class="values">
+                  <div class="itemValue">
+                    <label for="width">ширина, см</label>
+                    <input type="number" id="width" value="120">
+                  </div>
+                  <p class="factor">х</p>
+                  <div class="itemValue">
+                    <label for="width">ширина, см</label>
+                    <input type="number" id="width" value="120">
+                  </div>
+                </div>
+              </div>
+
+              <div class="windowTypes">
+                <h1 class="windowTypes-title">Одностворчатое окно KBE</h1>
+                <div class="windowType">
+                  <p class="windowType-title">1. Критерий выбора </p>
+									<div class="windowType-types">
+										<div class="windowType-radio">
+											<input type="radio" name="criteries" id="criterion_1">
+											<label for="criterion_1">пунк выбора 2</label>
+										</div>
+										<div class="windowType-radio">
+											<input type="radio" name="criteries" id="criterion_2">
+											<label for="criterion_2">пунк выбора 2</label>
+										</div>
+										<div class="windowType-radio">
+											<input type="radio" name="criteries" id="criterion_3">
+											<label for="criterion_3">пунк выбора 3</label>
+										</div>
+									</div>
+                </div>
+                <div class="windowLeaflet">
+									<p class="windowType-title">2. Выберите открывание створки</p>
+									<div class="windowLeaflet-select">
+										<p>Не открывается</p>
+										<img src="img/exr.png" alt="▼">
+									</div>
+              	</div>
+              </div>
+						</div>
+						<div class="calculate">
+              <div class="calculatePhone">
+                <div class="calculatePhone-image">
+									<img src="img/user.png" alt="">
+								</div>
+                <input type="number" placeholder="Введите номер">
+              </div>
+              <button class="calculateButton">Рассчитать</button>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+			<div class="contentWrap footer-wrap">
+				<p class="footerText">просто<br/>скромный футер</p>
+			</div>
+		</footer>
+  </main>
+</body>
+
+<script src="script.js"></script>
+</html>
